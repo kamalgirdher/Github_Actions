@@ -14,7 +14,9 @@ jobs:
     ubuntu:
         runs-on: ubuntu-latest
         steps:
-        - run: echo ${{env.CUSTOM_VAL}}
+        - run: |
+                echo ${{env.CUSTOM_VAL}}
+                echo ${{secrets.TESTSECRET}}
     windows:
         runs-on: windows-latest
         steps:

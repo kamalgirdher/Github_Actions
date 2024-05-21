@@ -10,6 +10,8 @@ on:
 jobs:
     ubuntu:
         runs-on: ubuntu-latest
-        uses: docker://python3:latest
         steps:
-          - run: date
+            - name DockerImage
+            uses: docker://python3:latest
+
+
