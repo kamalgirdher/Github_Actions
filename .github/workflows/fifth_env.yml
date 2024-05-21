@@ -1,0 +1,21 @@
+
+# This is a basic workflow to help you get started with Actions
+
+name: FIFTH ENV
+
+on:
+    push:
+        branches: [ "main" ]
+
+env:
+    CUSTOM_VAL: 'Kamal'
+
+jobs:
+    ubuntu:
+        runs-on: ubuntu-latest
+        steps:
+        - run: echo ${{env.CUSTOM_VAL}}
+    windows:
+        runs-on: windows-latest
+        steps:
+        - run: echo ${{env.CUSTOM_VAL}}

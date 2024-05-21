@@ -1,0 +1,15 @@
+
+# This is a basic workflow to help you get started with Actions
+
+name: Fourth MARKETPLACE
+
+on:
+    push:
+        branches: [ "main" ]
+
+jobs:
+    ubuntu:
+        runs-on: ubuntu-latest
+        uses: docker://python3:latest
+        steps:
+          - run: date
